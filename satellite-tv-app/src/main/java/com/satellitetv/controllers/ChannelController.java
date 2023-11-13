@@ -12,8 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/channels")
 public class ChannelController
 {
-    @Autowired
     private ChannelService cservice;
+
+    @Autowired
+    public ChannelController(ChannelService cservice) {
+        this.cservice = cservice;
+    }
 
     @GetMapping("/{id}")
     public Channel getChannel(@PathVariable Long id)

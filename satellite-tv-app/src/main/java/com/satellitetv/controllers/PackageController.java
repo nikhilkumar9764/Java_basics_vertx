@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/package")
 public class PackageController
 {
-    @Autowired
+
     private PackageService packageService;
 
     @GetMapping("/{id}")

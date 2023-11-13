@@ -13,14 +13,14 @@ public class SwaggerConfig
     @Bean
     public Docket channels()
     {
-        return new Docket(DocumentationType.SWAGGER_12).select().
+        return new Docket(DocumentationType.SWAGGER_2).select().
                 apis(RequestHandlerSelectors.basePackage("com.satellitetv.controllers.ChannelController")).paths(PathSelectors.any()).build();
     }
 
     @Bean
     public Docket packages()
     {
-        return new Docket(DocumentationType.SWAGGER_12).select().
+        return new Docket(DocumentationType.SWAGGER_2).select().
                 apis(RequestHandlerSelectors.basePackage("com.satellitetv.controllers.PackageController")).paths(PathSelectors.any()).build();
     }
 }

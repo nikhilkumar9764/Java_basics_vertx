@@ -1,8 +1,8 @@
 package com.satellitetv.entity;
 
 import com.satellitetv.enums.Plan;
-
 import javax.persistence.*;
+
 import java.util.List;
 
 @Entity

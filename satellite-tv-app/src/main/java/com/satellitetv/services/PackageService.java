@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class PackageService {
 
-    @Autowired
     private PackageRepository packageRepository;
 
     public Package getPackageById(Long id) {
